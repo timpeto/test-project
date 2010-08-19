@@ -1,4 +1,6 @@
 
+Scramble flook banana
+
 use "Z:\Documents\aquamat 2010\aquamat1 april1 2010.dta", clear
 
 
