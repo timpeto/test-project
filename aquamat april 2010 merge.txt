@@ -1,0 +1,32 @@
+
+use "Z:\Documents\aquamat 2010\aquamat1 april1 2010.dta", clear
+
+
+rename aconvulsions aconvulsionshistory
+merge m:m studynumber using "Z:\Documents\aquamat 2010\aquamat2 april1 2010.dta"
+ drop if _m==2
+ drop _merge
+merge m:m studynumber using "Z:\Documents\aquamat 2010\aquamat3 april1 2010.dta"
+
+ drop _merge
+merge m:m studynumber using "Z:\Documents\aquamat 2010\aquamat4 april1 2010.dta"
+
+ drop _merge
+merge m:m studynumber using "Z:\Documents\aquamat 2010\aquamat5 april1 2010.dta"
+drop if _m==2
+ drop _merge
+merge m:m studynumber using "Z:\Documents\aquamat 2010\aquamat6 april1 2010.dta"
+
+ drop _merge
+merge m:m studynumber using "Z:\Documents\aquamat 2010\aquamat7 april1 2010.dta"
+ drop _merge
+merge m:m studynumber using "Z:\Documents\aquamat 2010\aquamat8 april1 2010.dta"
+
+ drop _merge
+merge m:m studynumber using "Z:\Documents\aquamat 2010\aquamat9 april1 2010.dta"
+
+drop if _m==1
+drop _merge
+
+merge m:m studynumber using "Z:\Documents\aquamat 2009 final\aquamat10 sept23 2009.dta"
+
